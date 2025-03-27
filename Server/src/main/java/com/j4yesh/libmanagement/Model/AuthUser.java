@@ -11,7 +11,7 @@ public class AuthUser {
     @Id
     private String username;
     private String password;
-    private String role;
+//    private String role;
 
 
     public void setUsername(String username){
@@ -20,9 +20,9 @@ public class AuthUser {
     public void setPassword(String password){
         this.password=password;
     }
-    public void setRole(String role){
-        this.role=role;
-    }
+//    public void setRole(String role){
+//        this.role=role;
+//    }
 
     public String getUsername(){
         return this.username;
@@ -32,7 +32,7 @@ public class AuthUser {
         return this.password;
     }
 
-    public String getRole(String role){
-        return this.role;
-    }
+//    public String getRole(String role){
+//        return this.role;
+//    }
 }

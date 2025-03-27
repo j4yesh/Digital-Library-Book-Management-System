@@ -4,6 +4,7 @@ import com.j4yesh.libmanagement.CustomException.InvalidCredentialsException;
 import com.j4yesh.libmanagement.CustomException.UserAlreadyExistsException;
 import com.j4yesh.libmanagement.Model.AuthUser;
 import com.j4yesh.libmanagement.Service.AuthService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/auth")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
+@Tag(name="Auth APIs")
 public class AuthController {
     @Autowired
     private AuthService authService;

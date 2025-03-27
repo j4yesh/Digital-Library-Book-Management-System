@@ -5,6 +5,7 @@ import com.j4yesh.libmanagement.Model.Book;
 import com.j4yesh.libmanagement.Service.AuthUserDetailService;
 import com.j4yesh.libmanagement.Service.BookService;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,6 +23,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/books")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
+@Tag(name="Book APIs")
 public class BookController {
 
     @Autowired
