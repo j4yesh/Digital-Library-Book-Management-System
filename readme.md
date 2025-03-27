@@ -6,7 +6,7 @@
 
 
 ## 🛠️ Tech Stack
-- Java Spring Boot?
+- Java Spring Boot
 - MongoDB
 - RESTful APIs
 - Swagger-ui
