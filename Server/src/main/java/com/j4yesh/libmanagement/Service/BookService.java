@@ -21,6 +21,10 @@ public class BookService {
         return bookrepo.findByUploaderId(uploaderId);
     }
 
+    public List<Book> getAllBooks() {
+        return bookrepo.findAll();
+    }
+
     public Optional<Book> getBookById(String id) {
         return bookrepo.findById(id);
     }
